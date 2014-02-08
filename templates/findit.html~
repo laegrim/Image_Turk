@@ -1,0 +1,2 @@
+{%if latest_image %}
+	<img src={{latest_image.image}} alt="" />

@@ -23,6 +23,7 @@ SECRET_KEY = '61k8ai+d5-b4l8#ybw89_kp%xc&$3t)l@_1*h#pn09qif7u_xm'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+TEMPLATE_DIRS = (os.path.dirname(os.path.dirname(__file__)) + '/templates')
 
 ALLOWED_HOSTS = []
 
@@ -36,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'turk'
 )
 
 MIDDLEWARE_CLASSES = (
