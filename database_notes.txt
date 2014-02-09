@@ -1,0 +1,26 @@
+image table:
+  image file name
+  image_uid
+  image_time_stamp
+  location descriptor
+  
+
+table.interactions.naming_objects
+  image_uid
+  time_stamp
+  object_name
+  user_id
+  
+table.interactions.clicking_on_named_objects
+  image_uid
+  time_stamp
+  object_name
+  L_found
+  x_pos
+  y_pos
+  z_pos
+  time_to_locate
+  user_id
+  
+table.interactions.comparison
+   
