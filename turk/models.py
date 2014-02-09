@@ -5,6 +5,7 @@ class Image(models.Model):
     '''
     '''
     
+#    image_loc = models.CharField(max_length=300) 
     image = models.ImageField(upload_to = 'image/%Y/%m/%d')
     image_name = models.CharField(max_length=800)
     location_descriptor = models.CharField(max_length=800)
@@ -30,7 +31,7 @@ class FindObjectTest(models.Model):
 class Object(models.Model):
     '''
     '''
-    
+
     object_name = models.CharField(max_length=800)
     object_thumbnail = models.ImageField(upload_to = 'object_image/%Y/%m/%d')
     timestamp = models.DateTimeField(auto_now=True)

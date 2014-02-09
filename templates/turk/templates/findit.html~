@@ -1,0 +1,5 @@
+{%if latest_image %}
+	<body>
+		<img {%if object_loc %} src={{object_loc}} {% endif %} alt="" />
+	</body>>
+{% endif %}

@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+STATIC_URL = BASE_DIR + '/static/'
+MEDIA_ROOT = BASE_DIR + '/media/'
+MEDIA_URL = 'http://127.0.0.1:8000/media/'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -23,7 +25,7 @@ SECRET_KEY = '61k8ai+d5-b4l8#ybw89_kp%xc&$3t)l@_1*h#pn09qif7u_xm'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
-TEMPLATE_DIRS = (os.path.dirname(os.path.dirname(__file__)) + '/templates')
+TEMPLATE_DIRS = ('/home/laegrim/nasa_turk/templates/turk')
 
 ALLOWED_HOSTS = []
 

@@ -1,0 +1,5 @@
+{%if latest_object %}
+	<body>
+		<img src={{latest_object.image}} alt="" />
+	</body>>
+{%end if}
